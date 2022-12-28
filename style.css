@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "ZCOOL QingKe HuangYou", Courier;
+  box-sizing: border-box;
+}
+
+.fn-font {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 80px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > h2 {
+  margin-left: 10px;
+}
+
+header > nav {
+  width: 200px;
+  height: 100%;
+}
+
+header ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+header ul > li {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  background: url("./asset/sea.jpg") no-repeat center bottom / cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header ul > li :hover {
+  font-weight: bolder;
+}
+header li > a > img {
+  width: 1.3em;
+  opacity: 0.3;
+  margin-left: 0.5em;
+}
+header li > a :hover {
+  opacity: 1;
+}
+.content {
+  margin: 5%;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+.judith {
+  height: 17em;
+  margin: 5%;
+  background-image: url("asset/judith.gif");
+}
+.introduce {
+  display: flex;
+  margin: 5%;
+}
+#i {
+  margin-right: 3%;
+}
+hr {
+  margin: 5%;
+}

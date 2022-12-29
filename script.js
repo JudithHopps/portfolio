@@ -11,3 +11,37 @@ function typing() {
   }
 }
 setInterval(typing, 200);
+
+
+/* Demo purposes only */
+var snippet = [].slice.call(document.querySelectorAll('.hover'));
+if (snippet.length) {
+  snippet.forEach(function (snippet) {
+    snippet.addEventListener('mouseout', function (event) {
+      if (event.target.parentNode.tagName === 'figure') {
+        event.target.parentNode.classList.remove('hover')
+      } else {
+        event.target.parentNode.classList.remove('hover')
+      }
+    });
+  });
+}
+
+// Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+// Handle click on the "arrow up" button
+arrowUp.addEventListener("click", () => {
+  scrollIntoView("#home");
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}

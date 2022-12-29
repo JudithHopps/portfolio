@@ -93,11 +93,318 @@ header li > a :hover {
 }
 .introduce {
   display: flex;
-  margin: 5%;
+  margin: 3%;
 }
 #i {
   margin-right: 3%;
 }
 hr {
-  margin: 5%;
+  margin: 2%;
+}
+.skill{
+  text-align: center;
+}
+
+
+
+/* statistics start */
+.graph{
+  background-color:#ccc;
+  height: 100vh;
+  border-radius: 40px;
+  margin:25px;
+  display:block;
+}
+@keyframes stack10{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 10%; opacity:1;}
+}
+@keyframes stack15{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 15%; opacity:1;}
+}
+@keyframes stack50{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 50%; opacity:1;}
+}
+@keyframes stack60{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 60%; opacity:1;}
+}
+@keyframes stack75{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 75%; opacity:1;}
+}
+@keyframes stack80{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 80%; opacity:1;}
+}
+
+section{
+  display:flex;  
+  justify-content:center;
+  height: 500px;
+  transform:rotate(180deg);
+  
+}
+
+.graph {
+  height:400px;
+}
+
+.graph span{
+  display:flex;
+  height:40px;
+  line-height:40px;
+  text-align:right;
+  border-radius: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color:white;
+  transform:rotate(180deg);  
+}
+.graph h3{
+  transform:rotate(180deg);  
+
+}
+.graph.stack1 span{
+  background-color:rgba(0, 0, 0, 0.674);
+  height:10%;
+  animation:stack10 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack2 span{
+  background-color:aquamarine;
+  height:15%;
+  animation:stack15 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack3 span{
+  background-color:rgb(120, 204, 225);
+  height:15%;
+  animation:stack15 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack4 span{
+  background-color:rgb(248, 232, 10);
+  height:60%;
+  animation:stack60 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack5 span{
+  background-color:black;
+  height:50%;
+  animation:stack50 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack6 span{
+  background-color:red;
+  height:50%;
+  animation:stack50 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack7 span{
+  background-color:rgb(131, 152, 229);
+  height:80%;
+  animation:stack80 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack8 span{
+  background-color:orange;
+  height:80%;
+  animation:stack80 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack9 span{
+  background-color:skyblue;
+  height:50%;
+  animation:stack50 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack10 span{
+  background-color:rgb(114, 248, 114);
+  height:60%;
+  animation:stack60 2s 1;
+  animation-delay: 5s;
+}
+.graph.stack11 span{
+  background-color:yellow;
+  height:75%;
+  animation:stack75 2s 1;
+  animation-delay: 5s;
+}
+/* statistics end */
+
+
+.portfolio{
+  text-align: center;
+  /* margin-left:2%;
+  margin-right:2%; */
+  margin: 2%;
+  background-color: aliceblue;
+
+}
+
+
+
+/* 추 가 */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.snip1584 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 300px;
+  /* max-height: 300px; */
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  justify-content: space-between;
+  margin-top:2%;
+  /* margin-right: 4%; */
+}
+.snip1584 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1584:before {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 100%;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.9);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+.snip1584 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+.snip1584 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.snip1584 h3,
+.snip1584 h5,
+.snip1584 p
+ {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+  color:whitesmoke;
+  text-align: center;
+}
+.snip1584 p{
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  padding: 10px;
+}
+.snip1584 h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+}
+.snip1584 h5 {
+  font-weight: normal;
+  background-color: #ae895d;
+  padding: 3px 10px;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.snip1584 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1584:hover:before,
+.snip1584.hover:before {
+  top: 10px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.snip1584:hover h3,
+.snip1584.hover h3,
+.snip1584:hover h5,
+.snip1584.hover h5 ,
+.snip1584:hover p,
+.snip1584.hover p{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+.snip1584:hover h3,
+.snip1584.hover h3 ,
+.snip1584:hover p,
+.snip1584.hover p {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.snip1584:hover h5,
+.snip1584.hover h5 {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+
+/* Scroll */
+/* 
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  border-radius: 50%;
+  opacity: 0; 
+  pointer-events: none;
+  transition: all 300ms ease-in;
+  z-index: 6;
+} */
+/* 
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+
+
+footer{
+  text-align: center;
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
+footer hr{
+  margin-bottom: 0;
 }

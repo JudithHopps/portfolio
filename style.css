@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou");
 
+
+/* ==== 변수 설정 ===== */
+
 * {
   margin: 0;
   padding: 0;
   color: #000;
   font-family: "ZCOOL QingKe HuangYou", Courier;
   box-sizing: border-box;
+  --animationtime  : 2s;
 }
 
 .fn-font {
@@ -24,6 +28,7 @@ a {
   width: 1440px;
   margin: 0 auto;
 }
+/* ====== 헤더 ====== */
 header {
   width: 100%;
   height: 80px;
@@ -85,7 +90,8 @@ header li > a :hover {
     opacity: 0;
   }
 }
-
+/* ==== body ===== */
+/* 주디 gif */
 .judith {
   height: 17em;
   margin: 5%;
@@ -107,7 +113,7 @@ hr {
 
 
 
-/* statistics start */
+/* 기술스택 - 애니메이션 그래프 */
 .graph{
   background-color:#ccc;
   height: 100vh;
@@ -140,6 +146,7 @@ hr {
   100%{ height: 80%; opacity:1;}
 }
 
+
 section{
   display:flex;  
   justify-content:center;
@@ -147,6 +154,7 @@ section{
   transform:rotate(180deg);
   
 }
+
 
 .graph {
   height:400px;
@@ -171,70 +179,72 @@ section{
   background-color:rgba(0, 0, 0, 0.674);
   height:10%;
   animation:stack10 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime) ;
 }
 .graph.stack2 span{
   background-color:aquamarine;
   height:15%;
   animation:stack15 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack3 span{
   background-color:rgb(120, 204, 225);
   height:15%;
   animation:stack15 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack4 span{
   background-color:rgb(248, 232, 10);
   height:60%;
   animation:stack60 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack5 span{
   background-color:black;
   height:50%;
   animation:stack50 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack6 span{
   background-color:red;
   height:50%;
   animation:stack50 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack7 span{
   background-color:rgb(131, 152, 229);
   height:80%;
   animation:stack80 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack8 span{
   background-color:orange;
   height:80%;
   animation:stack80 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack9 span{
   background-color:skyblue;
   height:50%;
   animation:stack50 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack10 span{
   background-color:rgb(114, 248, 114);
   height:60%;
   animation:stack60 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
 .graph.stack11 span{
   background-color:yellow;
   height:75%;
   animation:stack75 2s 1;
-  animation-delay: 5s;
+  animation-delay: var(--animationtime);
 }
-/* statistics end */
+/* skill end */
 
+
+/* 프로젝트 */
 
 .portfolio{
   text-align: center;
@@ -245,9 +255,6 @@ section{
 
 }
 
-
-
-/* 추 가 */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 .snip1584 {
@@ -382,7 +389,7 @@ section{
   z-index: 9999;
 }
 
-
+/* ===== 푸터 ===== */
 footer{
   text-align: center;
   opacity: 0.4;

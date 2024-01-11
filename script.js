@@ -1,4 +1,4 @@
-const content = "vue.js(3.0), html(5), javascript(es6), css(3)";
+const content = "JavaScript(es6), TypeScript,\nReact.js, Next.js, Vue.js";
 const text = document.querySelector(".text");
 let i = 0;
 

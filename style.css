@@ -30,7 +30,7 @@ a {
 }
 /* ====== 헤더 ====== */
 header {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   margin-top: 0;
   display: flex;
@@ -99,7 +99,7 @@ header li > a :hover {
 }
 .introduce {
   display: flex;
-  margin: 3%;
+  margin: 3%  6%;
 }
 #i {
   margin-right: 3%;
@@ -109,6 +109,7 @@ hr {
 }
 .skill{
   text-align: center;
+  margin: 0%  6%;
 }
 
 
@@ -152,7 +153,6 @@ section{
   justify-content:center;
   height: 500px;
   transform:rotate(180deg);
-  
 }
 
 
@@ -255,7 +255,7 @@ section{
 
 }
 figure  img {
- width:300px;
+ width: 300px;
  height : 210px;
  overflow: hidden;
 }
@@ -269,7 +269,6 @@ figure  img {
   min-width: 200px;
   max-width: 300px;
   /* max-height: 300px; */
-  overflow: hidden;
   width: 100%;
   color: #ffffff;
   font-size: 16px;
